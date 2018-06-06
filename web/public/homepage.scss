@@ -1,0 +1,103 @@
+@function px2rem($px) {
+  $rem: 37.5px;
+  @return ($px / $rem) + rem;
+}
+
+.banner {
+  position: relative;
+  height: px2rem(214px);
+  padding-top: px2rem(15px);
+  #bannerImg {
+    padding-left: px2rem(15.5px);
+    padding-right: px2rem(15.5px);
+    width: px2rem(344px);
+  }
+
+  #bannerDescription {
+    position: absolute;
+    left: px2rem(15px);
+    right: px2rem(16px);
+    bottom: 0px;
+    font-size: px2rem(14px);
+    background: black;
+    color: white;
+    padding: px2rem(15.5px);
+  }
+}
+
+.header {
+  height: px2rem(40px); //一般给的设计稿的px值 除以2 给的高度是80，就写40
+  //background: #4287f4;
+  padding-left: px2rem(15.5px);
+  margin-left: px2rem(15.5px);
+  margin-right: px2rem(15.5px);
+
+  .header-item {
+    float: left;
+    font-size: px2rem(15px);
+    color: #828a92;
+    font-weight: 600;
+    margin-right: px2rem(31.5px);
+    line-height: px2rem(40px); //和header的height保持一致 可以使得文字垂直居中
+    position: relative;
+    &:nth-child(2) {
+      color: black;
+      font-size: px2rem(17px);
+      font-weight: bold;
+      &:before {
+        content: '•';
+        display: block;
+        position: absolute;
+        left: px2rem(-12px);
+        top: px2rem(-2px);
+      }
+    }
+  }
+}
+
+.newsList {
+
+  .newsContentSection {
+    width: 100%;
+    height: px2rem(102px);
+    padding-left: px2rem(15px); //明明上下左右都有padding 为什么只设置左右？
+    padding-right: px2rem(15px);
+    box-sizing: border-box; //在width100% + 左右padding实际宽度大于100%的情况下，让padding不增加宽度
+
+    .newsContent {
+      border-bottom: px2rem(1px) solid #e5e5e5;
+      overflow: hidden;
+      position: relative;
+      .newsImg {
+        width: px2rem(119px);
+        height: px2rem(70px);
+        margin-top: px2rem(15px);
+        margin-right: px2rem(10px);
+        margin-bottom: px2rem(15px);
+        display: block;
+        float: left;
+      }
+      .newsTitle {
+        margin-top: px2rem(15px);
+        font-size: px2rem(17px);
+        line-height: px2rem(20px);
+        font-weight: 600;
+      }
+      .newsTime {
+        position: absolute;
+        font-size: px2rem(10px);
+        left: px2rem(129px); // 依据父元素定位 所以要省掉最外层内部的padding 只计算newsContent开始的地方
+        bottom: px2rem(15px);
+      }
+      .newsAuthor {
+        position: absolute;
+        right: px2rem(15px);
+        bottom: px2rem(15px);
+        font-size: px2rem(10px);
+      }
+    }
+
+  }
+
+}
+
