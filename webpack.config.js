@@ -7,7 +7,8 @@ module.exports={
     output: {
         path: __dirname +  "/web/dist", //发布地址 path.resolve方法用于将相对路径转为绝对路径。
         filename: "[name].js",
-        chunkFilename: "[name].[chunkhash:5].js"
+        chunkFilename: "[name].[chunkhash:5].js",
+        publicPath: './'
     },
     devtool: 'eval-source-map',
     module:{
