@@ -56,7 +56,7 @@ class RemHomepage extends React.Component {
             <div>
 
                 <div className="banner">
-                    <img id="bannerImg" src="https://pic.36krcnd.com/201806/05011214/rh7aubmszihyqyhm!480"/>
+                    <img id="bannerImg" src="https://pic.36krcnd.com/201806/04160514/d05f1dgwlm3dogjk!1200"/>
                     <div id="bannerDescription">
                         开发人工智能金融搜索引擎，「虎博科技」获得过亿元 Pre-A 轮融资
                     </div>
@@ -82,7 +82,7 @@ class RemHomepage extends React.Component {
                                             <img className="newsImg"
                                                  src={item.newsSrc}/>
                                             <p className="newsTitle">{item.newsTtile.length > 25? item.newsTtile.slice(0, 26) + "..." : item.newsTtile}</p>
-                                            <span className="newsTime">{item.newsTime}ago</span>
+                                            <span className="newsTime">{item.newsTime} ago</span>
                                             <span className="newsAuthor">{item.newsAuthor}</span>
                                         </div>
 
