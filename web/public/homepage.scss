@@ -2,9 +2,14 @@
   $rem: 37.5px;
   @return ($px / $rem) + rem;
 }
+
 body {
   background: #fff;
+  margin: 0;
+  padding: 0;
+
 }
+
 .banner {
   position: relative;
   height: px2rem(214px);
