@@ -47,10 +47,6 @@ class RemHomepage extends React.Component {
         }
     }
 
-    componentDidMount() {
-        $('title').text("新闻列表");
-    }
-
     render() {
         return (
             <div>
