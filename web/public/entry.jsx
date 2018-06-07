@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, hashHistory} from 'react-router';
 import RemHomepage from './pages/RemHomepage.jsx';
+import './homepage.scss';
 
 const Extra = (location, cb) => {
     require.ensure([], require => {
