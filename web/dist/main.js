@@ -28188,9 +28188,7 @@ var Page3 = function Page3(location, cb) {
 _reactDom2.default.render(_react2.default.createElement(
     _reactRouter.Router,
     { history: _reactRouter.hashHistory },
-    _react2.default.createElement(_reactRouter.Route, { path: '/', component: _RemHomepage2.default }),
-    _react2.default.createElement(_reactRouter.Route, { path: 'Extra', getComponent: Extra }),
-    _react2.default.createElement(_reactRouter.Route, { path: 'Page3', getComponent: Page3 })
+    _react2.default.createElement(_reactRouter.Route, { path: '/', component: _RemHomepage2.default })
 ), document.getElementById('root'));
 
 /***/ })

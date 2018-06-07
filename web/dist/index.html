@@ -23,29 +23,20 @@
     </style>
 </head>
 <body>
-<div id="root"></div>
+    <div id="root"></div>
 
-<!--<script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>-->
-<script>
 
-    var htmlDom = document.getElementsByTagName('html')[0];
-    // first time you open the page
-    var htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
-    htmlDom.style.fontSize = htmlWidth / 10 + "px";
-    // after changing window size
-    window.addEventListener('resize', function () {
+    <script>
+        // first time you open the page
+        var htmlDom = document.getElementsByTagName('html')[0];
         var htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
         htmlDom.style.fontSize = htmlWidth / 10 + "px";
-    });
-</script>
+        // after changing window size
+        window.addEventListener('resize', function () {
+            var htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+            htmlDom.style.fontSize = htmlWidth / 10 + "px";
+        });
+    </script>
 
-
-<!-- body 最后 -->
-<!--<script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>-->
-<!--<script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>-->
-<script type="text/javascript" src="main.js?9e2ff03e4805e9f2d40a"></script></body>
-</html>
-
-
-</body>
+<script type="text/javascript" src="main.js?c5e1ebcc449466291eab"></script></body>
 </html>

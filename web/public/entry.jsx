@@ -20,7 +20,7 @@ ReactDOM.render(
 
     <Router history={hashHistory}>
         <Route path = "/" component={RemHomepage} />
-        <Route path = "Extra" getComponent={Extra} />
-        <Route path = "Page3" getComponent={Page3} />
+        {/*<Route path = "Extra" getComponent={Extra} />*/}
+        {/*<Route path = "Page3" getComponent={Page3} />*/}
     </Router>
     , document.getElementById('root'));
