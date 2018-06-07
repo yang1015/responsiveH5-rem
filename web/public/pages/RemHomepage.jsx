@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {hashHistory} from 'react-router';
-import '../homepage.scss';
+// import '../homepage.scss';
 
 class RemHomepage extends React.Component {
     constructor() {
